@@ -7,6 +7,8 @@ import React from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 
+import firebase from "../bin/firebase";
+
 function MyApp({ Component, pageProps, router }) {
   return (
     <>
