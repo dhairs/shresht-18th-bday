@@ -1,6 +1,6 @@
 import firebase from "firebase/app";
 var app;
-if (!firebase.apps.length) {
+if (!firebase.apps.length > 0) {
   app = firebase.initializeApp({
     apiKey: "AIzaSyC-LUw2ttCE9_e17BWR-hBYBDYqAaEPHJg",
     authDomain: "shresht.firebaseapp.com",
@@ -10,6 +10,8 @@ if (!firebase.apps.length) {
     appId: "1:1038020124834:web:48771fa155b57954ce77fb",
     measurementId: "G-5LZJXLDQ5W",
   });
+} else {
+  app = firebase.app();
 }
 
 export default app;
