@@ -1,7 +1,7 @@
 import firebase from "firebase/app";
-
+var app;
 if (!firebase.apps.length) {
-  const app = firebase.initializeApp({
+  app = firebase.initializeApp({
     apiKey: "AIzaSyC-LUw2ttCE9_e17BWR-hBYBDYqAaEPHJg",
     authDomain: "shresht.firebaseapp.com",
     projectId: "shresht",
