@@ -39,3 +39,4 @@ nextjs/
 
 #firebase config
 pages/api/secrets/firebaseServiceAccount.json
+next.config.__vercel_builder_backup__.js
