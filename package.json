@@ -10,6 +10,7 @@
     "heroku": "next start -p $PORT"
   },
   "dependencies": {
+    "@firebase/firestore": "^3.7.3",
     "antd": "4.12.3",
     "firebase": "^8.3.0",
     "framer-motion": "^3.3.0",

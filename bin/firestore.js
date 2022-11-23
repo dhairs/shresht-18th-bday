@@ -1,5 +1,5 @@
-import "firebase/firestore";
 import app from "./firebase";
+import "firebase/firestore";
 
 const db = app.firestore();
 
