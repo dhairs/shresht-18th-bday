@@ -7,14 +7,13 @@ import { motion } from "framer-motion";
 // import Confetti from "react-canvas-confetti";
 import db from "../bin/firestore.js";
 
+import Link from "next/link";
+
 function List({ posts }) {
-  console.log(posts);
   const fadeInUp = {
     initial: {
       y: 60,
       opacity: 0,
-      width: "97.5vw",
-      margin: "auto",
     },
     animate: {
       y: 0,
@@ -34,25 +33,28 @@ function List({ posts }) {
     },
   };
 
-  const listItems = posts.map((post) => (
-    <div className="secondContainer" key={post}>
-      <a href={`/${post}`} key={post}>
-        {post}
-      </a>
-    </div>
-  ));
-
   return (
     <>
       <body className={"container"}>
         <motion.div
-          className={"container"}
+          className={"container-all"}
           initial={fadeInUp.initial}
           animate={fadeInUp.animate}
           exit={fadeInUp.exit}
           transition={{ delay: 1.5 }}
         >
-          {listItems}
+          {posts.map((post) => (
+            <>
+              <div key={post.id}>
+                <Link href={`/${post.id}`} key={post.id}>
+                  <a>
+                    {post.name}, (passkey: {post.id})
+                  </a>
+                </Link>
+              </div>
+              <br />
+            </>
+          ))}
         </motion.div>
       </body>
     </>
@@ -65,8 +67,10 @@ export const getServerSideProps = async () => {
   var posts = [];
   await docRef.get(docRef).then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
-      console.log(doc.id, " => ", doc.data());
-      posts.push(doc.id);
+      posts.push({
+        id: doc.id,
+        ...doc.data(),
+      });
     });
   });
   return { props: { posts: posts } };

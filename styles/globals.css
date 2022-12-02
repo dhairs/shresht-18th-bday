@@ -9,7 +9,7 @@ body {
   /* overflow-x: hidden;
   background-color:darkgray; */
   color: black;
-  }
+}
 
 a {
   color: inherit;
@@ -20,9 +20,7 @@ a {
   box-sizing: border-box;
 }
 
-
 .container .secondContainer {
-
   position: absolute;
   display: inline-block;
   margin: env(safe-area-inset-top, 20px);
@@ -36,11 +34,11 @@ a {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   margin-left: auto;
-margin-right: auto;
-margin-top: -30vh;
-margin-bottom: 10%;
-left: 0;
-right: 0;
+  margin-right: auto;
+  margin-top: -30vh;
+  margin-bottom: 10%;
+  left: 0;
+  right: 0;
 }
 .container {
   height: 100%;
@@ -48,16 +46,14 @@ right: 0;
 img {
   max-width: 100%;
 }
-@media only screen and (max-width:500px) {
+@media only screen and (max-width: 500px) {
   .container .secondContainer {
-      width: 100%; 
-      margin-left:0;
-      margin-right:0;
-      margin-top: -40vh;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -40vh;
     min-height: 90vh;
-
   }
-
 }
 
 .secondarybuttonPage {
@@ -75,29 +71,23 @@ img {
 }
 
 .index-container {
-  max-width: 95vw;
+  min-width: 55vw;
+  max-width: 60vw;
   margin: auto;
 }
-
-
-
-
-
 
 a {
   color: #2b2b2b;
 }
 
-
-.white, label {
+.white,
+label {
   color: white !important;
 }
 
 .index-container {
-max-width: 60vw;
+  max-width: 60vw;
 }
-
-
 
 /* .body {
   position: relative!important;
@@ -128,28 +118,28 @@ max-width: 60vw;
   0% {background-position: 0% 30%;}
   } */
 
-  body {
-    background-color: #dddddd !important;
-  }
+body {
+  background-color: #dddddd !important;
+}
 
-  .body {
-    position: relative!important;
-    background-color: #d3d3d3 !important;
-    }
+.body {
+  position: relative !important;
+  background-color: #d3d3d3 !important;
+}
 
 blockquote {
-    position: relative;
-    margin: 12px 0;
-    padding: 15px 8px 5px 30px;
-    background: none repeat scroll 0 0 rgba(102,128,153,.05);
-    border: none;
-    color: #333;
-    border-left: 10px solid #d6dbdf;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
+  position: relative;
+  margin: 12px 0;
+  padding: 15px 8px 5px 30px;
+  background: none repeat scroll 0 0 rgba(102, 128, 153, 0.05);
+  border: none;
+  color: #333;
+  border-left: 10px solid #d6dbdf;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
 }
 
 pre {
@@ -169,13 +159,28 @@ code {
   margin: 0;
   word-break: normal;
 }
-code, pre {
+code,
+pre {
   background-color: #f5f5f5;
   font-size: 14px;
   border-radius: 0;
   overflow-x: auto;
 }
-pre, code, kbd, samp {
+pre,
+code,
+kbd,
+samp {
   font-size: 1em;
-  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
+    monospace;
+}
+
+.container-all {
+  /* color: lightskyblue; */
+  min-height: 50vh;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  justify-content: space-evenly;
 }
