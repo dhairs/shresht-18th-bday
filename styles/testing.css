@@ -14,16 +14,16 @@ body {
   /* background: linear-gradient(250deg, #7b2ff7, #f107a3); */
   /* background-color:rgb(207, 207, 207);
    */
-   background-color: rgba(235, 235, 235, 0.678);
+  background-color: rgba(235, 235, 235, 0.678);
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .App {
   font-family: sans-serif;
-  text-align: center;
+  /* text-align: center; */
 }
 
 ul,
@@ -71,9 +71,9 @@ li:last-child {
 }
 
 .black {
-    background : black;
-    width: 200px;
-    height: 200px;
+  background: black;
+  width: 200px;
+  height: 200px;
 }
 
 h3 {

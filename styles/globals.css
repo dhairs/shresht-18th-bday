@@ -184,3 +184,7 @@ samp {
   padding: 30px;
   justify-content: space-evenly;
 }
+
+.allPosts a {
+  color: #2490ff;
+}

@@ -45,7 +45,7 @@ function List({ posts }) {
         >
           {posts.map((post) => (
             <>
-              <div key={post.id}>
+              <div className={"allPosts"} key={post.id}>
                 <Link href={`/${post.id}`} key={post.id}>
                   <a>
                     {post.name}, (passkey: {post.id})
