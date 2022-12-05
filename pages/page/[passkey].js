@@ -119,7 +119,7 @@ function Editor({ preRenderValue }) {
           }}
           value={value}
         />
-        <Button type="primary" onClick={buttonSubmit}>
+        <Button type="primary" onClick={buttonSubmit} href={`/${passkey}`}>
           Submit
         </Button>
         <Link href={`/${password}`}>
