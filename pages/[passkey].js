@@ -11,7 +11,7 @@ const firebase = require("firebase/app");
 require("firebase/firestore");
 
 function Post({ markdown, name }) {
-  const finalString = `##### This message is from ${name} -- (Go Back) [/all]
+  const finalString = `##### This message is from ${name} -- [Go Back](/all)
 
 ${markdown}
 `;
